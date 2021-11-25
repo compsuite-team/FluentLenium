@@ -6,12 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.internal.WrapsElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.pagefactory.ElementLocator;
 
 import java.util.Arrays;
