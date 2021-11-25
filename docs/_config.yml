@@ -8,7 +8,7 @@ fluentlenium:
   version: "4.1.0"
 
 selenium:
-  version: "3.141.59"
+  version: "4.1.0"
 
 url: "http://fluentlenium.com"
 baseurl: ""
