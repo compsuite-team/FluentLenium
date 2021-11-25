@@ -41,7 +41,8 @@ public class CapabilitiesConfigurationPropertyRetrieverTest {
 
     @Test
     public void desiredCapabilities() {
-        DesiredCapabilities capabilitiesFirefox = DesiredCapabilities.firefox();
+        DesiredCapabilities capabilitiesFirefox = new DesiredCapabilities();
+        capabilitiesFirefox.setCapability("browserName", "firefox");
 
         Capabilities capabilities = retriever.getCapabilitiesProperty("firefox", null);
 

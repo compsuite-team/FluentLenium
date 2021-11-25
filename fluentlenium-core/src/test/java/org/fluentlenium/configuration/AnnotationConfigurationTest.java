@@ -118,10 +118,13 @@ public class AnnotationConfigurationTest {
 
     @Test
     public void desiredCapabilities() {
-        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("browserName", "firefox");
+
         Assertions.assertThat(desiredCapabilitiesConfiguration.getCapabilities()).isEqualTo(capabilities);
 
-        DesiredCapabilities differentCapabilities = DesiredCapabilities.chrome();
+        DesiredCapabilities differentCapabilities = new DesiredCapabilities();
+        differentCapabilities.setCapability("browserName", "chrome");
         Assertions.assertThat(desiredCapabilitiesConfiguration.getCapabilities()).isNotEqualTo(differentCapabilities);
     }
 
